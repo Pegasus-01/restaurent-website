@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<title>ABAR KHABO REATAURANT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/coffehouse.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE TO FIND US</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 11am to 11.30pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">ABAR KHABO<br>RESTAURANT</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">New Garia,Kolkata</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT OUR RESTAURANT</span></h5>
+    <p>
+    :The a la carte menu is just too long and if you are confused about what to order.<p>
+    :you may go for the buffet which, more or less covers the best of their dishes<p>
+    The 'Sunday Buffet' is a celebration in itself where all possible protein is there in the menu
+    'Bhapa Bhetki Gondhoraj', 'Dhakai Pora Mangsho', 'Aam Kasundi Murgi', 'Chitol Machr Muitha', 'Pur Bhora Doi Potol' are amongst the many that are a must order
+</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Owner And Main Adviser: Rudranil Maity & Diganta Jash</p>
+    </div>
+    <img src="images\restaurant2.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 11am to 11.30pm.</p>
+    <p><strong>Address:</strong>New Garia,Kolkata-700152</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Sada Vat</h5>
+      <p class="w3-text-grey">Normal steamed rice Rs.25</p><br>
+    
+      <h5>Shukto</h5>
+      <p class="w3-text-grey">Mixture of various vegetables Rs.25</p><br>
+    
+      <h5>Charapona</h5>
+      <p class="w3-text-grey">Taste our delicious "charaponar posto" Rs.55</p><br>
+    
+      <h5>Dimer Curry</h5>
+      <p class="w3-text-grey">Our special "dimer curry" with unique spices</p><br>
+    
+      <h5>Rui Macher Jhol</h5>
+      <p class="w3-text-grey">Delicious "rui mach" is one of our top pics Rs.30</p>
+
+      <h5>Vapa Ilish</h5>
+      <p class="w3-text-grey">Taste the unbeateable Ilish Rs.70</p>
+
+      <h5>Vetki Paturi</h5>
+      <p class="w3-text-grey">Bengalis' one of the favourites Rs.55</p>
+
+      <h5>Kosha Mangso</h5>
+      <p class="w3-text-grey">Processed in a unique way Rs.55</p>
+
+      <h5>Chingir Malaikari</h5>
+      <p class="w3-text-grey">Taste our delicios Chingri Malaikari @ Rs.65</p>
+
+      <h5>Special Dishes</h5>
+      <p class="w3-text-grey">Taste our classy bengali dishes like 'Bhapa Bhetki Gondhoraj', 'Dhakai Pora Mangsho', 'Aam Kasundi Murgi', 'Chitol Macher Matha', 'Pur Bhora Doi Potol' starting from Rs.90 </p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee Rs.25</p><br>
+    
+      <h5>Kulcha</h5>
+      <p class="w3-text-grey">Something special in it @ just Rs.25</p><br>
+    
+      <h5>Normal Tea</h5>
+      <p class="w3-text-grey">Regular tea @ Rs.10</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot @ Rs.20</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. Rs.20</p>
+
+      <h5>Fruit Juices</h5>
+      <p class="w3-text-grey">Mango,Pineapple juice etc. Rs.25</p><br>
+    
+      <h5>Lassi</h5>
+      <p class="w3-text-grey">Normal Lassi or flavoured etc. Rs.25</p><br>
+    </div> 
+    <img src="images\restaurant3.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at New Garia,Kolkata-700152 or at Google map</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.746472951881!2d88.41273855059497!3d22.476159585160072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02722b05a38e87%3A0x276c0d30e6be12ea!2sNetaji+Subhash+Engineering+College!5e0!3m2!1sen!2sin!4v1560555165257!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br>
+    <p><Strong><h3>NOTE:</h3></Strong></span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p></p>
+    <p>
+      
+
+
+
+
+
+    </p>
+    <p><h3><Strong>Login at our website to get 15 % extra discount coupon</Strong></h3></p>  
+    <P><a href="login form.html"><Strong><h3>Click here:</h3></Strong></P> 
+  </div>
+</div>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+</html>
